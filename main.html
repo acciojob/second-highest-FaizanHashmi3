@@ -13,7 +13,7 @@
 			// var ans= -Infinity;
 			let n=arr.length;
 			if(arr.length<=1) return -Infinity;
-			arr.sort()
+			 arr.sort((a,b)=>{return a-b;})
 			if((arr[n-2]==arr[0] )&& (arr[n-2]==arr[n-1])) return -Infinity
 			return arr[n-2];
 			
